@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <Button
+                android:text="普通地图"
+                android:id="@+id/normal"
+                />
+            <Button
+                android:text="卫星地图"
+                android:id="@+id/satelite"
+                />
+            <Button
+                android:text="空白地图"
+                android:id="@+id/empty"
+                />
+            <Button
+                android:text="热力图"
+                android:id="@+id/heat"
+                />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/search"
+                />
+        </TableRow>
+    </TableLayout>
+    <com.baidu.mapapi.map.MapView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/BaiduMapView"
+        />
+</LinearLayout>
